@@ -27,8 +27,8 @@ puts "5 skills created"
     title: "Portfolio Title: #{portfolio_item}",
     subtitle: 'The Latest Technology',
     body: "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
-    main_image: 'http://lorempixel.com/600/400/',
-    thumb_image: 'http://lorempixel.com/400/200/',
+    main_image: 'https://dummyimage.com/600x200/000/fff&text=Company+Name',
+    thumb_image: 'https://dummyimage.com/400x200/000/fff&text=Company+Name',
   )
 end
 puts '9 portfolio items created'
