@@ -37,4 +37,12 @@ class PortfoliosController < ApplicationController
     @portfolio_item = Portfolio.find(params[:id])
   end
 
+  def destroy
+    @portfolio_item = Portfolio.find(params[:id])
+    @portfolio_item.destroy
+    flash[:success] = 'This portfolio item was deleted'
+    redirect_to portfolios_path(@portfolio_items)
+
+  end
+
 end
