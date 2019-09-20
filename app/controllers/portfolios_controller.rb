@@ -19,4 +19,18 @@ class PortfoliosController < ApplicationController
     end
   end
 
+  def edit
+    @portfolio_item = Portfolio.find(params[:id])
+  end
+
+  def update
+    @portfolio_item = Portfolio.find(params[:id])
+    if @portfolio_item.update(params.require(:portfolio).permit(:title, :subtitle, :body))
+      flash[:success] = 'Portfolio has been updated'
+      redirect_to portfolios_path(@portfolio_items)
+    else
+      flash[:danger] = 'There was an error, please try again'
+    end
+  end
+
 end
