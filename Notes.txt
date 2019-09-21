@@ -27,4 +27,10 @@ after_initialize is after the def new action from the controller takes place. Bu
 Integrating Concerns:
   When you have functionality that doesn't fully fit inside a particular model or it would work across several models, that would be a good time to use a concern. This should not be confused with items that should be put inside of a helper module. Concerns should always deal with the data. Example would be that code for sending out sms messages, etc should not be put in a concern since it has nothing to do with data. Those items should be placed in the lib directory.
 
-  Adding the badge to the skills model 
+  Adding the badge to the skills model
+
+  # def set_defaults
+  #   self.main_image ||= 'https://dummyimage.com/600x400/000/fff&text=Company+Name'
+  #   self.thumb_image ||= 'https://dummyimage.com/400x200/000/fff&text=Company+Name'
+  #
+  # end

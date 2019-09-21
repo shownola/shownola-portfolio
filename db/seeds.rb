@@ -29,6 +29,13 @@ puts '10 blog posts created'
 end
 puts "5 skills created"
 
+3.times do |technology|
+  Technology.create!(
+    name: "Technology #{technology}",
+    portfolio_id: Portfolio.last.id
+  )
+end
+
 8.times do |portfolio_item|
   Portfolio.create!(
     title: "Portfolio Title: #{portfolio_item}",
@@ -50,3 +57,17 @@ puts '8 portfolio items created'
   )
 end
 puts '1 portfolio items created'
+
+# 3.times do |technology|
+#   Technology.create!(
+#     name: "Technology #{technology}",
+#     portfolio_id: Portfolio.last.id
+#   )
+# end
+
+# 3.times do |technology|
+#   Portfolio.last.technologies.create!(
+#     name: "Technology #{technology}"
+#   )
+# end
+purts '3 technologies created'
