@@ -1,0 +1,12 @@
+Blogs:
+1 baseball world series, topic_id: 1
+2 superbowl, topic_id: 2
+3 spring training, topic_id 1
+
+Topics:
+1 baseball, blog_id: 1, blog_id: 3
+2 football, blog_id: 2
+
+Does the topic own the Blog or does the Blog own the topic.
+Topic owns the blog post.
+The topic should have the ability to have many blog posts whereas the blog cannot have many topics
