@@ -10,3 +10,16 @@ Topics:
 Does the topic own the Blog or does the Blog own the topic.
 Topic owns the blog post.
 The topic should have the ability to have many blog posts whereas the blog cannot have many topics
+
+CUSTOM SCOPES: Custom database query
+in the model you would include somthing like:
+    scope :ruby_on_rails_portfolio_items, -> {where(subtitle: 'Ruby on Rails')}
+then in the controller you could call it like:
+    def index
+      @portfolio_item = Portfolio.ruby_on_rails_portfolio_items
+
+Custom scopes that you can call from the controller - considered to be best practice
+
+You could create a file in the views under portfolio - call it ruby and insert whatever code you wish. So it would fit into the mcv architecture. You would need to create a route in routes.rb ie. get 'ruby-items', to 'portfolio#ruby'
+
+after_initialize is after the def new action from the controller takes place. But not after the create.
