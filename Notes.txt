@@ -23,3 +23,8 @@ Custom scopes that you can call from the controller - considered to be best prac
 You could create a file in the views under portfolio - call it ruby and insert whatever code you wish. So it would fit into the mcv architecture. You would need to create a route in routes.rb ie. get 'ruby-items', to 'portfolio#ruby'
 
 after_initialize is after the def new action from the controller takes place. But not after the create.
+
+Integrating Concerns:
+  When you have functionality that doesn't fully fit inside a particular model or it would work across several models, that would be a good time to use a concern. This should not be confused with items that should be put inside of a helper module. Concerns should always deal with the data. Example would be that code for sending out sms messages, etc should not be put in a concern since it has nothing to do with data. Those items should be placed in the lib directory.
+
+  Adding the badge to the skills model 
