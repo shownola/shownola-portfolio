@@ -34,3 +34,15 @@ Integrating Concerns:
   #   self.thumb_image ||= 'https://dummyimage.com/400x200/000/fff&text=Company+Name'
   #
   # end
+
+
+  Jordan
+  In Ruby's OOP syntax, 'super' brings in the parent's class behavior. And you can perform that type of behavior in Ruby in general. But it's not as common with other gems since you typically wouldn't want to accidentally override the default behavior. But if you'd like to know more, here are four guides on metaprogramming, which is similar to what we're doing:
+
+  https://www.youtube.com/watch?v=lZfv4H-9ato
+
+  https://www.youtube.com/watch?v=viGWLaSjR34
+
+  https://www.youtube.com/watch?v=L3Y1LPasqEo
+
+  https://www.youtube.com/watch?v=GC9ZXrtOU0M
