@@ -50,6 +50,9 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+gem 'shownola_view_tool', git: 'https://github.com/shownola/shownola_view_tool/'
+
+
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
@@ -57,3 +60,4 @@ gem 'friendly_id', '~> 5.2.4'
 gem 'devise', '~> 4.7.1'
 gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
+gem 'petergate', '~> 2.0', '>= 2.0.1'
