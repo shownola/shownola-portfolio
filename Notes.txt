@@ -46,3 +46,14 @@ Integrating Concerns:
   https://www.youtube.com/watch?v=L3Y1LPasqEo
 
   https://www.youtube.com/watch?v=GC9ZXrtOU0M
+
+
+When to use helpers vs. partials:
+  if the majority is ruby code (if else statements, etc) use helper methods. If the majority is html then use partials.
+
+Content Helper methods
+  <%= content_tag :p, class: 'My special class' do %>
+    Hi I am a paragraph tag
+  <% end %>
+this would dynamically generate html code. The above would look like this:
+<p class="my-special-class">'Hi I am in a paragraph tag'</p>
