@@ -1,6 +1,6 @@
 class PortfoliosController < ApplicationController
   layout 'portfolio'
-  before_action: :set_portfolio_item, only: [:edit, :update, :show, :destroy]
+  before_action :set_portfolio_item, only: [:edit, :update, :show, :destroy]
 
   def index
     @portfolio_items = Portfolio.all
@@ -38,7 +38,7 @@ class PortfoliosController < ApplicationController
   def show
   end
 
-  def destroy    
+  def destroy
     @portfolio_item.destroy
     flash[:success] = 'This portfolio item was deleted'
     redirect_to portfolios_path(@portfolio_items)
