@@ -13,22 +13,30 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
   </head>
 
   <body>
 
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
 
 
-      <%= render 'shared/nav', location: 'top' %>
 
-      <%= login_helper %>
+        <%= render 'shared/application_nav' %>
 
-    <%= yield %>
+        <%= login_helper %>
 
-    <%= @copyright %>
+        <%= yield %>
 
-      <%= source_helper('application') %>
+        <%= @copyright %>
+
+        <%= source_helper('application') %>
+
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>
