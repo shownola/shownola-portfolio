@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
   before_action :set_copyright
 
   def set_copyright
-    @copyright = ShownolaViewTool::Renderer.copyright 'Sherry Wasieko', 'All rights reserved'
+    @copyright = ShownolaViewTool::Renderer.copyright 'Shownola | Sherry Wasieko', 'All rights reserved'
   end
 end
 
