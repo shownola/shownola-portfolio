@@ -62,3 +62,5 @@ gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
 gem 'petergate', '~> 1.7', '>= 1.7.5'
 gem "font-awesome-rails"
+gem 'kaminari', '~> 1.0', '>=1.0.1'
+gem 'bootstrap4-kaminari-views'
