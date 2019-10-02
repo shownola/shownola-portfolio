@@ -61,3 +61,4 @@ gem 'devise', '~> 4.7.1'
 gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
 gem 'petergate', '~> 1.7', '>= 1.7.5'
+gem "font-awesome-rails"

@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "font-awesome";
 
 
 /*
@@ -27,20 +28,16 @@ h6, .h6 {
   color: #333;
 }
 
-
 /*
  * Override Bootstrap's default container.
  */
-
 .container {
   max-width: 60rem;
 }
 
-
 /*
  * Masthead for nav
  */
-
 .blog-masthead {
   margin-bottom: 3rem;
   background-color: #428bca;
@@ -78,8 +75,6 @@ h6, .h6 {
   border-bottom: .3rem solid;
   border-left: .3rem solid transparent;
 }
-
-
 /*
  * Blog name and description
  */
@@ -105,7 +100,6 @@ h6, .h6 {
   }
 }
 
-
 /*
  * Main column and sidebar layout
  */
@@ -126,7 +120,6 @@ h6, .h6 {
   margin-bottom: 0;
 }
 
-
 /* Pagination */
 .blog-pagination {
   margin-bottom: 4rem;
@@ -134,7 +127,6 @@ h6, .h6 {
 .blog-pagination > .btn {
   border-radius: 2rem;
 }
-
 
 /*
  * Blog posts
@@ -151,8 +143,6 @@ h6, .h6 {
   margin-bottom: 1.25rem;
   color: #999;
 }
-
-
 /*
  * Footer
  */
@@ -166,4 +156,9 @@ h6, .h6 {
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+
+/* Custom Styles */
+.social-links {
+  font-size: 2rem;
 }
