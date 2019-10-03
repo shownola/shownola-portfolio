@@ -42,7 +42,7 @@ end
     subtitle: 'Ruby on Rails',
     body: "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
     main_image: 'https://dummyimage.com/600x400/000/fff&text=Company+Name',
-    thumb_image: 'https://dummyimage.com/400x200/000/fff&text=Company+Name',
+    thumb_image: 'https://dummyimage.com/348x225/000/fff&text=Company+Name',
   )
 end
 puts '8 portfolio items created'
@@ -70,4 +70,4 @@ puts '1 portfolio items created'
 #     name: "Technology #{technology}"
 #   )
 # end
-purts '3 technologies created'
+puts '3 technologies created'
