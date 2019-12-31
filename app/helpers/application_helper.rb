@@ -7,7 +7,6 @@ module ApplicationHelper
       (link_to 'login', new_user_session_path, class: style)
     else
        link_to "logout", destroy_user_session_path, method: :delete, class: style
-
     end
   end
 
@@ -16,5 +15,8 @@ module ApplicationHelper
        greeting = "Thanks for visiting my site from #{session[:source]} and you are on the #{layout_name} page"
        content_tag(:p,greeting, class: 'source-greeting')
      end
+  end
+
+  def nav_helper(style, tag_type)
   end
 end
