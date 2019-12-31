@@ -66,3 +66,17 @@ this would dynamically generate html code. The above would look like this:
   <div><%= link_to 'Blog', blogs_path %></div>
   <div><%= link_to 'Portfolio', portfolios_path %></div>
 </div>
+
+https://shownola-photo-op.herokuapp.com/
+https://shownola-project-management.herokuapp.com/
+https://shownola-saas-app.herokuapp.com/
+https://shownola-stock-tracker.herokuapp.com/
+https://shownola-store.herokuapp.com/
+https://shownola-taski.herokuapp.com
+https://shownola-what-sup.herokuapp.com/
+https://shownola-yelp-camp.herokuapp.com/
+https://shownola-yelpdemo1.herokuapp.com/
+
+
+publishable key: pk_test_JlSHGGGYWkOhvVn10YRhRfxc
+Secret key: sk_test_szSE5c7vwU2wNu2CsWXmQeD5
