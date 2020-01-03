@@ -6,20 +6,3 @@
 //   width: 100%;
 //   padding: 0;
 // }
-
-img.img-hexagon {
-    overflow: hidden;
-    visibility: hidden;
-    -webkit-transform: rotate(120deg);
-       -moz-transform: rotate(120deg);
-        -ms-transform: rotate(120deg);
-         -o-transform: rotate(120deg);
-            transform: rotate(120deg);
-    cursor: pointer;
-    }
-  // img.img-hexagon {
-  //       clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-  //     }
-  img.prof-pic {
-    border-radius: 50%;
-  }

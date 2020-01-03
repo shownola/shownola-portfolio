@@ -31,7 +31,7 @@ html,
 body {
   height: 100%;
   font-family: 'Raleway', sans-serif;
-  background-color: #333;
+  // background-color: #333;
 }
 
 h1, .h1,
@@ -216,6 +216,26 @@ img.img-hexagon {
     clip-path: polygon(33.33% 0%, 66.66% 0%, 100% 33.33%, 100% 66.66%, 66.66% 100%, 33.33% 100%, 0 66.66%, 0 33.33%);
   }
 
+/* BACKGROUND COVER */
+
+#background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: image_url('') no-repeat;
+  background-size: cover;
+}
+
+.app-footer {
+  color: white;
+}
 
 // #C17347;
 // #567B93;
