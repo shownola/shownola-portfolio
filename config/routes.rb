@@ -4,6 +4,8 @@ Rails.application.routes.draw do
     put :sort, on: :collection
   end
 
+resources :portfolios 
+
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
 
 
