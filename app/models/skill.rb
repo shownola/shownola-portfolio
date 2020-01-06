@@ -1,11 +1,11 @@
 class Skill < ApplicationRecord
-  include Placeholder
+  # include Placeholder
   validates_presence_of :title, :percent_used
 
-  after_initialize :set_defaults
-
-  def set_defaults
-    self.badge ||= Placeholder.image_generator(height: 250,width: 250, name: 'Skill')
-
-  end
+  # after_initialize :set_defaults
+  #
+  # def set_defaults
+  #   self.badge ||= Placeholder.image_generator(height: 250,width: 250, name: 'Skill')
+  #
+  # end
 end
