@@ -25,7 +25,7 @@ class PortfoliosController < ApplicationController
       flash[:success] = 'A new portfolio item was created'
       redirect_to portfolios_path(@portfolio_items)
     else
-      flash[:notice] = 'There was an error, please try again'
+      render :new
     end
   end
 
