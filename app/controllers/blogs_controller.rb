@@ -4,11 +4,14 @@ class BlogsController < ApplicationController
   access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit, :toggle_status]}, site_admin: :all
 
   def index
-    @blogs = Blog.page(params[:page]).per(3)
+    @blogs = Blog.page(params[:page]).per(5)
     @page_title = 'My Portfolio Blog'
   end
 
   def show
+    @blog = Blog.includes(:comments).friendly.find(params[:id])
+    @comment = Comment.new
+
     @page_title = @blog.title
     @seo_keywords = @blog.body
   end
