@@ -1,4 +1,4 @@
-<%= form_with(model: blog, local: true) do |form| %>
+<%= form_with(model: blog, local: true) do |f| %>
   <% if blog.errors.any? %>
       <% blog.errors.full_messages.each do |error| %>
         <%= alert_generator error %>
@@ -8,15 +8,25 @@
 
   <div class="form-group">
 
-    <%= form.text_field :title, class: 'form-control', placeholder: 'Title' %>
+    <%= f.text_field :title, class: 'form-control', placeholder: 'Title' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :topic_id %>
+    <%= f.collection_select(:topic_id, Topic.all, :id, :title,
+                          {
+                            selected: blog.topic.id,
+                            include_blank: true
+                          },
+                          class: 'form-control') %>
   </div>
 
   <div class="form-group">
 
-    <%= form.text_area :body, class: 'form-control', rows: 10, placeholder: 'Add Content' %>
+    <%= f.text_area :body, class: 'form-control', rows: 10, placeholder: 'Add Content' %>
   </div>
 
   <div class="form-group">
-    <%= form.submit class: 'form-control btn btn-primary' %>
+    <%= f.submit class: 'form-control btn btn-primary' %>
   </div>
 <% end %>
