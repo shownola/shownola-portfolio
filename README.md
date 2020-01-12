@@ -22,3 +22,21 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+ * Recent scope for blogs
+ * Require a topic for blogs
+ * Topic index and show
+ * Topic for blog widget with scope for topics with blogs
+ * Blog status update in form
+ * Topic for blog form page
+ * Skills on about page
+ * Additional information about page
+ * Custom font
+ * Card design for about and contact
+ * Source tracker on blog and portfolio
+ * Breadcrumb on blog show page
+ * Icons for actions on blogs
+ * Partial for admin blog actions
+ * New blog header
+ * Markdown integration
+ * Favicon integration 
