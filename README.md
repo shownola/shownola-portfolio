@@ -26,7 +26,8 @@ Things you may want to cover:
  * Recent scope for blogs - DONE
  * Update blog scope so only admin users can see drafts - DONE
  * Hide draft posts via show action for blogs - DONE
- * Require a topic for blogs
+ * Require a topic for blogs - DONE
+ * Topic for blog form page - DONE
  * Topic index and show
  * Topic for blog widget with scope for topics with blogs
  * Blog status update in form
