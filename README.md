@@ -43,3 +43,6 @@ Things you may want to cover:
  * New blog header
  * Markdown integration
  * Favicon integration
+
+ * Gems for markdown and highlighting:
+ * Coderay and Redcarpet

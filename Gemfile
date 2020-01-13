@@ -40,6 +40,10 @@ end
 
 gem 'shownola_view_tool', git: 'https://github.com/shownola/shownola_view_tool/'
 
+# Github suggested to upgrade the following
+gem 'rack', '>= 2.0.8'
+gem "loofah", ">= 2.3.1"
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.2.4'
@@ -61,5 +65,5 @@ gem 'cocoon', '~> 1.2', '>= 1.2.9'
 gem "gritter", '1.2.0'
 gem 'twitter', '~> 6.2'
 gem 'redis', '~> 3.3', '>= 3.3.3'
-gem 'rack', '>= 2.0.8'
-gem "loofah", ">= 2.3.1"
+gem 'redcarpet', '~> 3.3', '>= 3.3.4'
+gem 'coderay', '~> 1.1', '>= 1.1.2'
