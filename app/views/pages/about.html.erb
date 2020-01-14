@@ -1,5 +1,5 @@
 
-<div class="app-card-container">
+<div class="app-card-container about-container">
   <div class="card">
     <h1>About Me</h1>
     <hr>
@@ -8,7 +8,20 @@
       <div class="col-md-4">
         <%= image_tag "SHERRY.jpg", width: '300', height: '350', alt: "Profile Image", class: 'prof-img' %>
 
+        <div class="skills">
+          <% @skills.each do |skill| %>
+          <div class="skill">
+            <h4><%= skill.title %></h4>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" aria-valuenow="<%= skill.percent_used %>" aria-valuemax="100" style="width: <%= skill.percent_used %>%">
+
+              </div>
+            </div>
+          </div>
+          <% end %>
+        </div>
       </div>
+
       <div class="col-md-8">
         <p>A full stack web developer based in Phoenix Arizona. ... Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
 
