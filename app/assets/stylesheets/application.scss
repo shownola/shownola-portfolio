@@ -248,6 +248,19 @@ img.img-hexagon {
 .tech-news > .card {
   padding: 30px;
 }
+.app-card-container {
+  color: black;
+  text-align: left;
+}
+.app-card-container > .card {
+  padding: 40px;
+}
+.prof-img {
+  box-shadow: 9px 4px 26px 2px rgba(0,0,0,0.75);
+}
+.app-card-container a {
+  color: red;
+}
 
 // #C17347;
 // #567B93;
