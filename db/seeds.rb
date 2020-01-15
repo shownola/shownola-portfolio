@@ -71,3 +71,21 @@ puts '1 portfolio items created'
 #   )
 # end
 puts '3 technologies created'
+
+# User.create!(
+#   email: 'test@test.com',
+#   password: 'password',
+#   password_confirmation: 'password',
+#   name: 'Admin User',
+#   roles: 'site_admin'
+# )
+# puts '1 admin user created'
+#
+# User.create!(
+#   email: 'test1@test.com',
+#   password: 'password',
+#   password_confirmation: 'password',
+#   name: 'Regular User',
+#
+# )
+# puts '1 regular user created'
