@@ -12,6 +12,7 @@
       <hr>
       <em><%= @portfolio_item.subtitle %></em>
       <p><%= @portfolio_item.body %></p>
+      <p class="portfolio-name"><%= link_to 'See Site', url_for(@portfolio_item.url), target: '_blank' %></p>
 
       <hr>
       <h3>Technologies</h3>
