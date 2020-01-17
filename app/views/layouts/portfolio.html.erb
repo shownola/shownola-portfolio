@@ -8,11 +8,13 @@
     <%= csp_meta_tag %>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/imagehover.css">
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
 
     <%= favicon_link_tag 'favicons/favicon.jpg' %>
 
+    <%= stylesheet_link_tag 'application', 'imagehover.scss' %>
     <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -22,7 +24,7 @@
   <%= render 'shared/portfolio_nav' %>
   <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
 
-  <%= link_to 'New Portfolio', new_portfolio_path if logged_in?(:site_admin) %>
+  <span class="portfolio-links"><%= link_to 'New Portfolio', new_portfolio_path if logged_in?(:site_admin) %></span>
 
 
 
