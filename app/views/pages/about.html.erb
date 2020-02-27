@@ -31,38 +31,109 @@
           <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#jobHistory" aria-expanded="false" aria-controller="jobHistory">Job History</button>
 
           <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#Education" aria-expanded="false" aria-controller="Education">Education</button>
+
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#Development" aria-expanded="false" aria-controller="Education">Professional Development</button>
         </p>
 
         <p>
           <div class="collapse" id="jobHistory">
             <div class="card card-block">
-              First American Commercial Lending
-              Phoenix, Arizona
+              <div class="row">
+                <div class="col-md-3">
+                  <%= image_tag 'famlend.png', width: '100%', class: 'job-img' %>
+                </div>
+                <div class="col-md-9">
+                  <strong>Sr. Loan Officer</strong> First American Commercial Lending
+                  Phoenix, Arizona
+                </div>
+              </div>
+
             </div>
             <div class="card card-block">
-              First National Bank / Pacific Coast Mortgage
+              <div class="row">
+                <div class="col-md-3">
+                  <%= image_tag 'fnbLayton.png', width: '100%' %>
+                </div>
+                <div class="col-md-9">
+                  <strong>Sr. Loan Officer</strong> First National Bank / Pacific Coast Mortgage
+                </div>
+              </div>
             </div>
+
             <div class="card card-block">
-              Jobsss
+              <div class="row">
+                <div class="col-md-3">
+                  <%= image_tag 'Pathfinder.jpg', width: '100%' %>
+                </div>
+                <div class="col-md-9">
+                  <strong>Sr. Loan Officer</strong> Pathfinder Mortgage Corporation
+                </div>
+              </div>
+            </div>
+
+            <div class="card card-block">
+              <div class="row">
+                <div class="col-md-3">
+                  <%= image_tag 'fnbtrustmark.jpg', width: '100%', class: 'job-img' %>
+                </div>
+                <div class="col-md-9">
+                  <strong>Operations Management</strong> First National Bank
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="collapse" id="Education">
             <div class="card card-block">
-              Tulane University
+              <div class="row">
+                <div class="col-md-3">
+                  <%= image_tag 'tulane.png', width: '100%' %>
+                </div>
+                <div class="col-md-9">
+                  Tulane University, New Orleans, Louisiana
+                </div>
+              </div>
             </div>
+
             <div class="card card-block">
-              Clinton High School
-            </div>
-            <div class="card card-block">
-              Clinton High School
+              <div class="row">
+                <div class="col-md-3">
+                  <%= image_tag 'hinds.png', width: '100%' %>
+                </div>
+              <div class="col-md-9">
+                Hinds Jr. College
+              </div>
             </div>
           </div>
+            <div class="card card-block">
+              <div class="row">
+                <div class="col-md-3">
+                  <%= image_tag 'clinton.jpg', width: '100%' %>
+                </div>
+              <div class="col-md-9">
+                Clinton High School
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="collapse" id="Development">
+          <div class="card card-block">
+            <div class="row">
+              <div class="col-md-3">
+                <%= image_tag 'tulane.png', width: '100%' %>
+              </div>
+              <div class="col-md-9">
+                Tulane University, New Orleans, Louisiana
+              </div>
+            </div>
+          </div>
+
         </p>
 
 
 
-        
+
 
       </div>
     </div>
