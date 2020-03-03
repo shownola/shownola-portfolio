@@ -22,7 +22,7 @@ module PortfoliosHelper
       img.main_image || image_generator(heigth: '600', width: '400').so_s
     end
   end
-
+ 
   # self.main_image ||= Placeholder.image_generator(height: 600,width: 400, name: 'Company Name')
   # self.thumb_image ||= Placeholder.image_generator(height: 348,width: 225, name: 'Company Name')
 end

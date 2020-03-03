@@ -1,10 +1,12 @@
 <div class="col-md-4">
-  <div class="card mb-4 shadow-sm" data-id="<%= portfolio_item.id %>">
+  <div class="card mb-4 shadow-sm hvr-underline-from-left" data-id="<%= portfolio_item.id %>">
 
-    <span class="card-img"><%= image_tag(portfolio_item.thumb_image.to_s, width: '100%') unless portfolio_item.thumb_image.nil?  %></span>
-    <div class="card-body portfolio-name">
+    <span class="card-img imghvr-reveal-up"><%= image_tag(portfolio_item.thumb_image.to_s, width: '100%') unless portfolio_item.thumb_image.nil? %>
+    <figcaption><span class=""><%= link_to portfolio_item.title, portfolio_path(portfolio_item) %></span><hr><span class="subtitle"><%= portfolio_item.subtitle %></span></figcaption>
+    </span>
+    <!-- <div class="card-body portfolio-name">
       <p class="card-text"><span class="portfolio-name"><%= link_to portfolio_item.title, portfolio_path(portfolio_item) %></span><span class="subtitle"><%= portfolio_item.subtitle %></span></p>
 
-    </div>
+    </div> -->
   </div>
 </div>
