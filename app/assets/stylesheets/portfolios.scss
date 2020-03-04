@@ -11,6 +11,7 @@
   padding-bottom: var(--jumbotron-padding-y);
   margin-bottom: 0;
   background-color: #fff;
+
 }
 @media (min-width: 768px) {
   .jumbotron {
@@ -55,18 +56,22 @@ li.text-white a{
   margin-bottom: 2rem;
   border: 0;
 }
-// .portfolio-name {
-//   padding: .5rem;
-//   font-size: .95rem;
-// }
+.portfolio-name {
+  padding: .5rem;
+  font-size: .95rem;
+}
 .portfolio-name a {
-  color: #fff;
+  // color: #fff;
+  color: #2A798D;
   font-size: 1.3rem;
   text-align: center;
 }
 .portfolio-links a {
   color: #2A798D;
   // font-size: 1.2rem;
+}
+.port-link a {
+  text-decoration: none;
 }
 .subtitle {
   font-size: .85rem;
@@ -179,7 +184,7 @@ li.text-white a{
 }
 [class^='imghvr-'] figcaption, [class*=' imghvr-'] figcaption a {
     color: #ffffff;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 [class^='imghvr-'] figcaption h1, [class^='imghvr-'] figcaption h2, [class^='imghvr-'] figcaption h3, [class^='imghvr-'] figcaption h4, [class^='imghvr-'] figcaption h5, [class^='imghvr-'] figcaption h6, [class*=' imghvr-'] figcaption h1, [class*=' imghvr-'] figcaption h2, [class*=' imghvr-'] figcaption h3, [class*=' imghvr-'] figcaption h4, [class*=' imghvr-'] figcaption h5, [class*=' imghvr-'] figcaption h6 {
