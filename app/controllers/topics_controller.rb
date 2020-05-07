@@ -16,11 +16,32 @@ class TopicsController < ApplicationController
     end
   end
 
+  def new
+    @topic = Topic.new
+  end
+
+  def create
+    @topic = Topic.new(topic_params)
+    if @topic.save
+      flash[:success] = 'Your topic has been saved'
+      redirect_to topics_path(@topic)
+    else
+      flash[:notice] = 'There was an error creating topic'
+      render :new
+    end
+  end
+
+
+
 
   private
 
   def set_sidebar_topics
     @sidebar_topics = Topic.with_blogs
+  end
+
+  def topic_params
+    params.require(:topic).permit(:title)
   end
 
 

@@ -65,9 +65,3 @@ Administrative Dashboard uses Administrate
 Uses Postgresql for database in production and sqlite for Development
 
 Deployed to Heroku
-
-
-<!-- <div class="card-body portfolio-name">
-  <p class="card-text"><span class="portfolio-name"><%= link_to portfolio_item.title, portfolio_path(portfolio_item) %></span><span class="subtitle"><%= portfolio_item.subtitle %></span></p>
-
-</div> -->

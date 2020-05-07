@@ -7,7 +7,7 @@ class Portfolio < ApplicationRecord
 
   validates_presence_of :title, :subtitle, :body
 
-  validates :title, :subtitle, :body, presence: true
+  # validates :title, :subtitle, :body, presence: true
 
   mount_uploader :thumb_image, PortfolioUploader
   mount_uploader :main_image, PortfolioUploader

@@ -9,6 +9,8 @@ class Blog < ApplicationRecord
 
   has_many :comments, dependent: :destroy
 
+  mount_uploader :image, ImageUploader
+
   def self.special_blogs
     all
   end

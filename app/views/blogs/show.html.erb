@@ -18,7 +18,16 @@
   <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %> |
   <%= link_to 'Back', blogs_path %>
 
-  <p><%= markdown @blog.body %></p>
+  
+  <p>
+    <% if @blog.image_url %>
+      <%= image_tag @blog.image_url, class: 'blog-img' %>
+    <% end %>
+  </p>
+
+
+
+  <p><%= markdown @blog.body  %></p>
 
   <%= render 'comments/comment_form' %>
 

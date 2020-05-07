@@ -32,6 +32,13 @@
   max-width: 40rem;
 }
 
+.album {
+  min-height: 50rem; /* Can be removed; just added for demo purposes */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f7f7f7;
+}
+
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -79,6 +86,21 @@ li.text-white a{
 .url-link {
 
 }
+.lead a {
+  color: #1A5B7E;
+}
+.btn-primary {
+  background-color: #1A5B7E;
+}
+
+.main-img {
+  max-width: 600px;
+  max-height: 600px;
+}
+.thumb-img {
+  max-width: 350px;
+  max-height: 230px;
+}
 
 
 /* End of hover effects */
@@ -100,8 +122,8 @@ li.text-white a{
   left: 0;
   right: 100%;
   bottom: 0;
-  // background: #2098D1;
-  background: #353535;
+  background: #1A5B7E;
+  // background: #353535;
   height: 4px;
   -webkit-transition-property: right;
   transition-property: right;
@@ -150,8 +172,8 @@ li.text-white a{
     display: inline-block;
     margin: 0;
     max-width: 100%;
-    // background-color: #2266a5;
-    background-color: #353535;
+    background-color: #1A5B7E;
+    // background-color: #353535;
     color: #fff;
     overflow: hidden;
     -webkit-backface-visibility: hidden;
@@ -171,7 +193,8 @@ li.text-white a{
 
 [class^='imghvr-'] figcaption, [class*=' imghvr-'] figcaption {
     // background-color: #135796;
-    background-color: #353535;
+    background-color: #1A5B7E;
+    // background-color: #353535;
     padding: 30px;
     position: absolute;
     top: 0;
@@ -253,6 +276,72 @@ li.text-white a{
     transform: translateY(100%);
 }
 
+/* -----------------------------*/
+
+/* imghvr-hinge-*
+   ----------------------------- */
+[class^='imghvr-hinge-'], [class*=' imghvr-hinge-'] {
+    -webkit-perspective: 50em;
+    -moz-perspective: 50em;
+    perspective: 50em;
+}
+
+[class^='imghvr-hinge-'] figcaption, [class*=' imghvr-hinge-'] figcaption {
+    opacity: 0;
+    z-index: 1;
+}
+
+[class^='imghvr-hinge-']:hover img, [class*=' imghvr-hinge-']:hover img {
+    opacity: 0;
+}
+
+[class^='imghvr-hinge-']:hover figcaption, [class*=' imghvr-hinge-']:hover figcaption {
+    opacity: 1;
+    -webkit-transition-delay: 0.21s;
+    -moz-transition-delay: 0.21s;
+    transition-delay: 0.21s;
+}
+
+/* imghvr-hinge-up
+   ----------------------------- */
+.imghvr-hinge-up img {
+    -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    -o-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+
+.imghvr-hinge-up figcaption {
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+.imghvr-hinge-up:hover > img {
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+    -o-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+
+.imghvr-hinge-up:hover figcaption {
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+    transform: rotateX(0);
+}
+
+
 .subtitle {
   font-size: .9rem;
 }
@@ -264,7 +353,7 @@ figcaption a {
 // body {
 //   min-height: 75rem; /* Can be removed; just added for demo purposes */
 // }
-//
+
 // .navbar {
 //   margin-bottom: 0;
 // }
@@ -287,9 +376,9 @@ figcaption a {
 // .jumbotron .container {
 //   max-width: 40rem;
 // }
-//
+
 // .album {
-//   min-height: 50rem; /* Can be removed; just added for demo purposes */
+//   // min-height: 50rem; /* Can be removed; just added for demo purposes */
 //   padding-top: 3rem;
 //   padding-bottom: 3rem;
 //   background-color: #f7f7f7;
