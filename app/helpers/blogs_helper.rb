@@ -1,6 +1,6 @@
 module BlogsHelper
 
-  
+
 
 
   def gravatar_helper user
@@ -8,6 +8,8 @@ module BlogsHelper
   end
 
   class CodeRayify < Redcarpet::Render::HTML
+
+
 
     def block_code(code, language)
       language ||= :plaintext
@@ -23,6 +25,7 @@ module BlogsHelper
       no_intra_emphasis: true,
       autolink: true,
       lax_html_blocks: true,
+      prettify: true,
     }
 
     markdown_to_html = Redcarpet::Markdown.new(coderayified, options)

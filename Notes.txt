@@ -80,3 +80,13 @@ https://shownola-yelpdemo1.herokuapp.com/
 
 publishable key: pk_test_JlSHGGGYWkOhvVn10YRhRfxc
 Secret key: sk_test_szSE5c7vwU2wNu2CsWXmQeD5
+
+
+<%= video_tag(
+    'globe1.mp4',
+    id: 'background',
+    autoplay: true,
+    muted: true,
+    poster: 'globe_Moment.jpg',
+    class: 'video-cover-container'
+) %>

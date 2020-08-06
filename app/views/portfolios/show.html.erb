@@ -11,9 +11,11 @@
       <h1><%= @portfolio_item.title %></h1>
       <hr>
       <em><%= @portfolio_item.subtitle %></em>
+      <hr>
       <p><%= @portfolio_item.body %></p>
       <% if @portfolio_item.url.present? %>
-        <p class="portfolio-name"><%= link_to 'See Site', url_for(@portfolio_item.url), target: '_blank' %></p>
+      <i class=" fa fa-hand-o-right" aria-hidden="true"><span class="portfolio-name"><%= link_to 'Visit the Website', url_for(@portfolio_item.url), target: '_blank' %></span></i>
+        
       <% end %>
 
       <hr>

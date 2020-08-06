@@ -1,5 +1,16 @@
 @import "bootstrap";
 @import 'gritter';
+@import "font-awesome";
+
+
+$red: #D83219;
+$gold: #E1B055;
+$light-gold: #C3B758;
+$lightest-blue: #91CEFC;
+$light-blue: #9BB8CB;
+$blue: #5E76C1;
+$rust: #A0523B;
+
 
 
 /*
@@ -47,9 +58,9 @@ h6, .h6 {
   font-family: 'Raleway', sans-serif;
 }
 body {
-  color: #fff;
+  color: $gold;
   text-align: center;
-  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+  text-shadow: 0 .05rem .1rem rgba(0,0,0,.8);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -82,18 +93,31 @@ body {
 
 .masthead {
   margin-bottom: 2rem;
+  max-width: 100%;
 }
 
 .masthead-brand {
   margin-bottom: 0;
+  color: $gold;
+  font-weight: bold;
 }
+// .nav-masthead .nav-link .app-nav .nav-item a {
+//   color: $red;
+// }
+// a.nav-link .nav-item  {
+//   color: $red;
+// }
 
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: bold;
-  color: rgba(255,255,255,.5);
+  color: rgba(0,0,0,.5);
   background-color: transparent;
+  color: $gold;
+  text-shadow: 2px 2px 4px #000000;
   border-bottom: .25rem solid transparent;
+  font-size: 1.1rem;
+
 }
 
 .nav-masthead .nav-link:hover,
@@ -106,8 +130,9 @@ body {
 }
 
 .nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
+  color: $lightest-blue;
+  // color: #fff;
+  border-bottom-color: $lightest-blue;
 }
 
 @media (min-width: 48em) {
@@ -221,7 +246,6 @@ img.img-hexagon {
   }
 
 /* BACKGROUND COVER */
-
 #background {
   position: fixed;
   top: 50%;
@@ -233,10 +257,29 @@ img.img-hexagon {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image_url('globe_Moment.jpg') no-repeat;
+  background: image_url('bourbonStreet.jpg') no-repeat;
   background-size: cover;
-  background: rgba(0, 0, 0, .5);
+  background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+
 }
+
+// #background {
+//   position: fixed;
+//   top: 50%;
+//   left: 50%;
+//   min-width: 100%;
+//   min-height: 100%;
+//   width: auto;
+//   height: auto;
+//   z-index: -100;
+//   -webkit-transform: translateX(-50%) translateY(-50%);
+//   transform: translateX(-50%) translateY(-50%);
+//   background: image_url('globe_Moment.jpg') no-repeat;
+//   background-size: cover;
+//   background: rgba(0, 0, 0, .5);
+// }
 .site-wrapper {
   background: rgba(0, 0, 0, .4);
 }
@@ -245,13 +288,32 @@ img.img-hexagon {
 // }
 .element {
   font-size: 2rem;
+  text-shadow: 1px 1px 2px #000000;
+  font-weight: 500;
 }
 .cover-heading {
   font-size: 3.5rem;
+  text-shadow: 2px 2px 4px #000000;
+}
+.about-btn {
+  background-color: $gold;
+  color: $blue;
+  border: 1px solid $gold;
+  &:hover {
+    background-color: $blue;
+    color: $gold;
+    border: 1px solid $blue;
+
+  }
 }
 
 .app-footer {
-  color: white;
+  // color: white;
+  color: $light-blue;
+}
+
+.about-text {
+  font-size: 1.25rem;
 }
 
 .tech-news {

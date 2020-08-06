@@ -44,9 +44,9 @@ Things you may want to cover:
  * Markdown integration
  * Favicon integration
 
- * Gems for markdown and highlighting:
+ # Gems for markdown and highlighting:
  * Coderay and Redcarpet
-Dynamic copyright, dynamic date
+ *  Dynamic copyright, dynamic date
 
 
 

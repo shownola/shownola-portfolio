@@ -1,6 +1,7 @@
 @import "bootstrap";
 @import "jquery-ui";
 @import 'gritter';
+@import "font-awesome";
 
 :root {
   --jumbotron-padding-y: 3rem;
@@ -73,6 +74,11 @@ li.text-white a{
   font-size: 1.3rem;
   text-align: center;
 }
+i.fa {
+  color: #2A798D;
+  font-size: 1.5rem;
+  padding-right: 5px;
+}
 .portfolio-links a {
   color: #2A798D;
   // font-size: 1.2rem;
@@ -100,6 +106,10 @@ li.text-white a{
 .thumb-img {
   max-width: 350px;
   max-height: 230px;
+}
+
+.min-height {
+  height: 230px;
 }
 
 

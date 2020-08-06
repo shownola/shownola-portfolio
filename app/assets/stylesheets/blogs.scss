@@ -7,6 +7,14 @@
  * Globals
  */
 
+ $red: #D83219;
+ $gold: #E1B055;
+ $light-gold: #C3B758;
+ $lightest-blue: #91CEFC;
+ $light-blue: #9BB8CB;
+ $blue: #5E76C1;
+ $rust: #A0523B;
+
 @media (min-width: 48em) {
   html {
     font-size: 18px;
@@ -190,10 +198,32 @@ h6, .h6 {
 .blogcrumb a {
   font-size: 1.3rem;
   margin: 0px 10px 0px 10px;
+  color: $gold;
 }
 .blog-nav {
   margin-bottom: 40px;
 }
 .blog-sidebar-source {
   margin-top: 20px;
+}
+
+// .pagination > li > a,
+// .pagination > li > span {
+//     color: $gold; // use your own color here
+// }
+
+.pagination > li > a,
+.pagination > li > span .page-link .active {
+    color: $blue; // use your own color here
+}
+
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+    background-color: $gold;
+    border-color: $gold;
 }
