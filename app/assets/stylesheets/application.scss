@@ -101,12 +101,7 @@ body {
   color: $gold;
   font-weight: bold;
 }
-// .nav-masthead .nav-link .app-nav .nav-item a {
-//   color: $red;
-// }
-// a.nav-link .nav-item  {
-//   color: $red;
-// }
+
 
 .nav-masthead .nav-link {
   padding: .25rem 0;
@@ -329,11 +324,11 @@ img.img-hexagon {
 .app-card-container {
   color: black;
   text-align: left;
-  width: 75rem;
-  padding-top: 40px;
+
 }
+
 .app-card-container > .card {
-  padding: 40px;
+  padding: 25px;
 
 }
 .prof-img {
@@ -367,6 +362,9 @@ img.img-hexagon {
   background-color: #E5F0FF;
   // background-color: #F1F2F2;
   // background-color: #F1F2F2;
+  margin: o auto;
+  float: none;
+  margin-bottom: 10px;
 }
 
 /* Radial In */

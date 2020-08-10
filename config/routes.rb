@@ -27,5 +27,7 @@ resources :portfolios
 
   root to: 'pages#home'
 
+  match '(*any)', to: redirect(subdomain: ''), via: :all, constraints: {subdomain: 'www'}
+
 
 end
