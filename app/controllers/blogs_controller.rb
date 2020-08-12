@@ -10,7 +10,7 @@ class BlogsController < ApplicationController
     else
       @blogs = Blog.published.recent.page(params[:page]).per(5)
     end
-    @page_title = 'My Portfolio Blog'
+    @page_title = 'Sherry Wasieko / Shownola Blog'
   end
 
   def show
@@ -19,7 +19,8 @@ class BlogsController < ApplicationController
       @comment = Comment.new
 
       @page_title = @blog.title
-      @seo_keywords = @blog.body
+      @seo_keywords = @blog.title, @blog.body
+
     else
       redirect_to blogs_path, notice: 'You are not authorized to access this page'
     end

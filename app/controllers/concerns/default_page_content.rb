@@ -6,8 +6,8 @@ module DefaultPageContent
   end
 
   def set_page_defaults
-    @page_title = 'Shownola Portfolio | Sherry Wasieko'
-    @seo_keywords = 'Shownola Portfolio'
+    @page_title = 'Shownola Portfolio | Sherry Wasieko Portfolio'
+    @seo_keywords = 'Shownola Portfolio, Sherry Wasieko Portfolio, Ruby on Rails Developer'
   end
 
 end

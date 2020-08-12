@@ -43,6 +43,8 @@ class PortfoliosController < ApplicationController
   end
 
   def show
+    @page_title = @portfolio_item.subtitle
+    @seo_keywords = @portfolio_item.subtitle, @portfolio_item.body
   end
 
   def destroy

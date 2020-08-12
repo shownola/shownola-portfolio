@@ -31,8 +31,9 @@ module ShownolaPortfolio
     # the framework and any gems in your application.
 
     config.middleware.use Rack::Deflater
-    
 
+    # Dynamic error pages:
+    config.exceptions_app = self.routes
 
 
     # Don't generate system test files.
