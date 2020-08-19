@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-# ruby '2.6.3'
-ruby '2.7.1'
+ruby '2.6.3'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 
@@ -23,12 +23,12 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'capistrano', '~> 3.11'
-gem 'capistrano-rails', '~> 1.4'
-gem 'capistrano-passenger', '~> 0.2.0'
-gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
-
-gem 'aws-sdk'
+# gem 'capistrano', '~> 3.11'
+# gem 'capistrano-rails', '~> 1.4'
+# gem 'capistrano-passenger', '~> 0.2.0'
+# gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
+#
+# gem 'aws-sdk'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 
