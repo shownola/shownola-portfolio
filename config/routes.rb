@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  root to: 'pages#home'
+
   resources :topics, only: [:index, :show, :new, :create]
   # resources :comments
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register' }
@@ -25,7 +27,7 @@ resources :portfolios
   mount ActionCable.server => '/cable'
 
 
-  root to: 'pages#home'
+
 
   match "/404", to: "errors#not_found", via: :all
   match "/422", to: "errors#unacceptable", via: :all

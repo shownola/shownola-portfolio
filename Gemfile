@@ -28,6 +28,8 @@ gem 'capistrano-rails', '~> 1.4'
 gem 'capistrano-passenger', '~> 0.2.0'
 gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
 
+gem 'aws-sdk'
+
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
@@ -58,7 +60,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.2.4'
 gem 'devise', '~> 4.7.1'
 gem 'bootstrap', '~> 4.3.1'
-# gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'jquery-rails'
 
 gem 'petergate', '~> 1.7', '>= 1.7.5'

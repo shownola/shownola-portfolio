@@ -32,3 +32,11 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# keys
+/showkey
+/showkey.pub
+/portfolio
+/portfoliopub
+/githubdeploy.pub
+/githubdeploy
