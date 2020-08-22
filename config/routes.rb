@@ -27,7 +27,7 @@ resources :portfolios
   mount ActionCable.server => '/cable'
 
 
-  get '/check.txt', to: proc {[200, {}, ['it_works']]}
+  # get '/check.txt', to: proc {[200, {}, ['it_works']]}
 
   # match "/404", to: "errors#not_found", via: :all
   # match "/422", to: "errors#unacceptable", via: :all
