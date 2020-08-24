@@ -226,7 +226,7 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     redcarpet (3.5.0)
-    redis (3.3.5)
+    redis (4.2.1)
     responders (3.0.1)
       actionpack (>= 5.0)
       railties (>= 5.0)
@@ -331,7 +331,7 @@ DEPENDENCIES
   rack (>= 2.0.8)
   rails (~> 5.2.3)
   redcarpet (~> 3.3, >= 3.3.4)
-  redis (~> 3.3, >= 3.3.3)
+  redis (~> 4.0)
   sass-rails (~> 5.0)
   shownola_view_tool!
   spring
