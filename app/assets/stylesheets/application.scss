@@ -252,7 +252,7 @@ img.img-hexagon {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image_url('bourbonStreet.jpg') no-repeat;
+  background: image_url('bourbonStreet.jpg' alt: 'bourbon street image') no-repeat;
   background-size: cover;
   background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
   filter: blur(3px);

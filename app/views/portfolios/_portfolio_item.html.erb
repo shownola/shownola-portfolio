@@ -1,7 +1,7 @@
 <div class="col-md-4">
   <div class="card mb-4 shadow-sm hvr-underline-from-left" data-id="<%= portfolio_item.id %>">
 
-    <span class="card-img imghvr-reveal-up"><%= image_tag(portfolio_item.thumb_image.to_s, width: '100%', class: 'thumb-img min-height') unless portfolio_item.thumb_image.nil? %>
+    <span class="card-img imghvr-reveal-up"><%= image_tag(portfolio_item.thumb_image.to_s, alt: "website image", width: '100%', class: 'thumb-img min-height') unless portfolio_item.thumb_image.nil? %>
     <figcaption><span class="port-link"><%= link_to portfolio_item.title, portfolio_path(portfolio_item) %></span><hr><span class="subtitle"><%= portfolio_item.subtitle %></span></figcaption>
     </span>
 
