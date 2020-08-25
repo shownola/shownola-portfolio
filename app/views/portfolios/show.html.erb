@@ -14,7 +14,7 @@
       <hr>
       <p><%= @portfolio_item.body %></p>
       <% if @portfolio_item.url.present? %>
-      <i class=" fa fa-hand-o-right" aria-hidden="true"><span class="portfolio-name"><%= link_to 'Visit the Website', url_for(@portfolio_item.url), target: '_blank', rel="noopener" %></span></i>
+      <i class=" fa fa-hand-o-right" aria-hidden="true"><span class="portfolio-name"><%= link_to 'Visit the Website', url_for(@portfolio_item.url), target: '_blank' %></span></i>
 
       <% end %>
 
