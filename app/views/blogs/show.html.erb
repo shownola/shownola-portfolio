@@ -18,7 +18,7 @@
   <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %> |
   <%= link_to 'Back', blogs_path %>
 
-  
+
   <p>
     <% if @blog.image_url %>
       <%= image_tag @blog.image_url, class: 'blog-img' %>
@@ -28,6 +28,9 @@
 
 
   <p><%= markdown @blog.body  %></p>
+
+  <hr>
+  <p>Feel free to leave a comment below! Must be logged in.</p>
 
   <%= render 'comments/comment_form' %>
 
